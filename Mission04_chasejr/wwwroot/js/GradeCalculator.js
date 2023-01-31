@@ -42,5 +42,5 @@ $("#grade").click(function () {
     // Put together the message that will be written to the page
     let sMessage = ('Your final grade would be ' + fGrade + '%\nYou earned a(n) ' + sLetterGrade);
     // Write the message using jQuery
-    $('#message').html('\n\n' + sMessage);
+    $('#message').html(sMessage);
 })

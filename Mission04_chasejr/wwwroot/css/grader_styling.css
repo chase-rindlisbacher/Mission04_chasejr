@@ -2,6 +2,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left:1em;
     padding-bottom:3em;
+    background-color:aliceblue;
 }
 
 img {
@@ -12,4 +13,9 @@ img {
     text-align: center;
     margin: auto;
     list-style-position: inside;
+}
+
+form {
+    background-color: cornflowerblue;
+    color: white;
 }

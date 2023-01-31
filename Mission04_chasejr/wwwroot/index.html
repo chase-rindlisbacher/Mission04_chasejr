@@ -10,16 +10,16 @@
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/grader_styling.css" rel="stylesheet" />
 </head>
-<body class="content">
-    <div>
+<body>
+    <div class="content">
         <h1>Hi, my name is Chase!</h1>
     </div>
     <!--Picture of me doing something I love-->
-    <div>
+    <div class="content">
         <img src="img/climbing_photo.jpeg" />
     </div>
     <!--Paragraph of what I want to get out of this class-->
-    <div>
+    <div class="content">
         <h1>Hopes for IS413:</h1>
         <p>
             Over the course of this class, I hope to learn marketable skills that I can include on my resume.<br />
@@ -29,7 +29,7 @@
         </p>
     </div>
     <!--Make a list of my top 3 jobs below-->
-    <div>
+    <div class="content">
         <h1>Jobs I'd Be Interested In:</h1>
         <ol>
             <li>Database Manager</li>
@@ -45,7 +45,7 @@
     Final Exam 10 %
     INTEX 10 %
     -->
-    <div class="form">
+    <div class="form content">
         <h1>Grade Calculator:</h1>
         Input the percentage you score in each grade category to see what your overall class grade would be!
 <!--Create a form for the user to input their percentage scores in each grade category-->
@@ -65,11 +65,12 @@
             <input type="number" min="0" max="100" name="Intex" id="intex"><br /><br />
 <!--Give them a way to initiate the calculation-->
             <input id="grade" type="button" value="Calculate Grade"/>
+            <br />
         </form>
     </div>
-    <div>
+    <div class="content">
     <!--Provide a space for the message to be printed-->
-        <p id="message"></p>
+        <p id="message" class="message"></p>
     </div>
 <!--Import your javascript sources being used-->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
