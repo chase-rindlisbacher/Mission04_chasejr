@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Validator;
+<!--Grade Calculator Based on IS413 Syllabus
+   Assignments 50 %
+   Group Project 10 %
+   Quizzes 10 %
+   Midterm Exam 10 %
+   Final Exam 10 %
+   INTEX 10 %
+   -->
+<div class="form content">
+    <h1>Grade Calculator:</h1>
+    Input the percentage you score in each grade category to see what your overall class grade would be!
+    <!--Create a form for the user to input their percentage scores in each grade category
+        and make a submit button call the post method-->
+    <form method="post">
+        <br />
+        <label>Assignments</label>
+        @* use the asp-for tag helper in place of the name of each html input tag so that their values will
+           be passed when the form is submitted *@
+        <input type="number" asp-for="Assignments" id="assignments"><br /><br />
+        <label>Group Project</label>
+        <input type="number" asp-for="Group_project" id="group_project"><br /><br />
+        <label>Quizzes</label>
+        <input type="number" asp-for="Quizzes" id="quizzes"><br /><br />
+        <label>Midterm Exam</label>
+        <input type="number" asp-for="Midterm" id="midterm"><br /><br />
+        <label>Final Exam</label>
+        <input type="number" asp-for="Final" id="final"><br /><br />
+        <label>Intex</label>
+        <input type="number" asp-for="Intex" id="intex"><br /><br />
+        <!--Give them a way to initiate the validation-->
+        <input id="grade" type="submit" value="Calculate Grade" />
+        <br />
+    </form>
+</div>
+
+<div asp-validation-summary="All"></div>
+<div class="content">
+    <!--Provide a space for the message to be printed-->
+    <p id="message" class="message"></p>
+</div>
+<!--Import your javascript sources being used-->

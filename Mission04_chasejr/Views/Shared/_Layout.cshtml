@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!--This will generate a fav-Icon-->
+    <link rel="icon" type="image/x-icon" href="~/img/climbing_photo.jpeg">
+    <!--Import your style sheets that are being used-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/grader_styling.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="HomePage" asp-action="Index">Home</a>
+        <a asp-controller="HomePage" asp-action="Calculator">Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    @*Each page will call the javascript functions on loading, the GradeCalculator.js page is currently
+      not meaningful because the controller and model are now handling validating. It is printing an alert 
+      statement currently though*@
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/GradeCalculator.js"></script>
+</body>
+</html>

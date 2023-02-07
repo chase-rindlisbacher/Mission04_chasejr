@@ -1,3 +1,4 @@
+/*Chase Rindlisbacher, grade entry validator program Mission_5 Assignment.*/
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
